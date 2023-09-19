@@ -16,7 +16,7 @@ class HgGit < Formula
   end
 
   livecheck do
-    url "https://files.pythonhosted.org/packages/6f/ac/78a739bb37cf0f70db9cf115263b4e30daf5e35551d48a2a881d6b8894a4/hg-git-1.0.2.tar.gz"
+    url :stable
     strategy :pypi
   end
 
