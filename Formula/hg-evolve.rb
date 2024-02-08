@@ -5,11 +5,12 @@ class HgEvolve < Formula
   homepage "https://www.mercurial-scm.org/doc/evolution/user-guide.html"
   license "GPL-2.0-or-later"
 
-  revision 1
-
   stable do
-    url "https://files.pythonhosted.org/packages/b2/ec/986120fab219b21158aeed208a7e60122a59b12ef8151d2c3d44520b64a1/hg-evolve-11.1.0.tar.gz"
-    sha256 "b0cbc7bc7c0bb8c4f42da1f65c50de3ee78f6f00978ef97ae9019d11147493a8"
+    url "https://files.pythonhosted.org/packages/b9/d0/03b4019d3e554a47efaeb43171a15a0cde8e117e73cbf8cbd7e5ce06b130/hg-evolve-11.1.1.tar.gz"
+    sha256 "1c564dfc92503e5541e7bc5c514c725ebac3e04a8f83dbd809101ae0f0101e8c"
+
+    depends_on "mercurial"
+    depends_on "python@3.12"
   end
 
   livecheck do
@@ -20,9 +21,6 @@ class HgEvolve < Formula
   head do
     # Nothing to do
   end
-
-  depends_on "mercurial"
-  depends_on "python@3.12"
 
   def install
     virtualenv_install_with_resources

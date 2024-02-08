@@ -5,11 +5,12 @@ class HgGit < Formula
   homepage "https://hg-git.github.io"
   license "GPL-2.0-or-later"
 
-  revision 1
-
   stable do
-    url "https://files.pythonhosted.org/packages/41/9a/e8d24706580160636df8380763f81852a635a438a4a2f053d59ace54d3ca/hg-git-1.0.3.tar.gz"
-    sha256 "1ee170456fd2b86af3317f5bb6d76aced151075f5d659345e58f3e7bd800416c"
+    url "https://files.pythonhosted.org/packages/7f/90/258c9e55c78ab7c8c2b0937e4741c6536f67e23b8a3105ceab8c20e81c15/hg-git-1.1.0.tar.gz"
+    sha256 "6ed11a9862ea082e4f4628311db7b8f7f6e724d5469ba0b37fce7625a01d077f"
+
+    depends_on "mercurial"
+    depends_on "python@3.12"
   end
 
   livecheck do
@@ -21,17 +22,14 @@ class HgGit < Formula
     # Nothing to do
   end
 
-  depends_on "mercurial"
-  depends_on "python@3.12"
-
   resource "dulwich" do
-    url "https://files.pythonhosted.org/packages/57/e0/1b5f95c2651284a5d4fdfb2cc5ecad57fb694084cce59d9d4acb7ac30ecf/dulwich-0.21.6.tar.gz"
-    sha256 "30fbe87e8b51f3813c131e2841c86d007434d160bd16db586b40d47f31dd05b0"
+    url "https://files.pythonhosted.org/packages/2b/e2/788910715b4910d08725d480278f625e315c3c011eb74b093213363042e0/dulwich-0.21.7.tar.gz"
+    sha256 "a9e9c66833cea580c3ac12927e4b9711985d76afca98da971405d414de60e968"
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/31/ab/46bec149bbd71a4467a3063ac22f4486ecd2ceb70ae8c70d5d8e4c2a7946/urllib3-2.0.4.tar.gz"
-    sha256 "8d22f86aae8ef5e410d4f539fde9ce6b2113a001bb4d189e0aed70642d602b11"
+    url "https://files.pythonhosted.org/packages/e2/cc/abf6746cc90bc52df4ba730f301b89b3b844d6dc133cb89a01cfe2511eb9/urllib3-2.2.0.tar.gz"
+    sha256 "051d961ad0c62a94e50ecf1af379c3aba230c66c710493493560c0c223c49f20"
   end
 
   def install
