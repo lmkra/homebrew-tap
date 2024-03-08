@@ -6,8 +6,8 @@ class HgEvolve < Formula
   license "GPL-2.0-or-later"
 
   stable do
-    url "https://files.pythonhosted.org/packages/b9/d0/03b4019d3e554a47efaeb43171a15a0cde8e117e73cbf8cbd7e5ce06b130/hg-evolve-11.1.1.tar.gz"
-    sha256 "1c564dfc92503e5541e7bc5c514c725ebac3e04a8f83dbd809101ae0f0101e8c"
+    url "https://files.pythonhosted.org/packages/82/f0/371e61f225f192a71336c961d1241f050cea6221b13715007fe1b381fa5c/hg-evolve-11.1.2.tar.gz"
+    sha256 "ba0f93d6c45207e279172ab375347bc59b6fc9b85dcc165823b838ad7d780c7a"
 
     depends_on "mercurial"
     depends_on "python@3.12"
