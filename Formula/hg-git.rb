@@ -6,8 +6,8 @@ class HgGit < Formula
   license "GPL-2.0-or-later"
 
   stable do
-    url "https://files.pythonhosted.org/packages/7a/8a/cdaa0e41e0298db7c88c1bd9d16c00b89bb9f3e194005a78a6f81a2ac104/hg-git-1.1.1.tar.gz"
-    sha256 "af4e10eb36edf153358d892818e74966a28f3f15f2e230b55f577d9c9f9f1166"
+    url "https://files.pythonhosted.org/packages/8c/cf/10a04d5844da51fc6114772d67955007239451b0a700d3f1e300803abb96/hg_git-1.1.3.tar.gz"
+    sha256 "96a9c28b832374f5422177580080c6751639cdc53940fad21f3cbe34acac32d7"
 
     depends_on "mercurial"
     depends_on "python@3.12"
